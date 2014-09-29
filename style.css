@@ -26,10 +26,12 @@ h1, h2 {text-align: center;}
 }
 
 #pad {
-    width:600px;
+    width:630px;
     height:600px;
     margin: 0 auto;
+    padding-left:30px;
     margin-top: 20px;
+    margin-bottom:20px;
 }
 
 .row {

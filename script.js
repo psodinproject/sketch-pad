@@ -27,6 +27,9 @@ $(document).ready(function(){
   var setListeners = function() {
     $('#new_grid').on('click', makeGrid);
     $('#clear').on('click', clearBoxes);
+    $(".box").on('click', function(){
+          $(this).addClass('color');
+    });
     $(".box").on('mouseover',
       function(){ 
         if(isDown) {
@@ -50,9 +53,12 @@ $(document).ready(function(){
         $(this).append("<div class=\"box\"></div>");
       }
     });
-    var dimension = Math.round(600/size);
-    $('.row').css('height', dimension + 'px');
+    var dimension = Math.round(parseInt($('#pad').css('height'))/size);
+    console.log(dimension);
+    $('.row').css('height', (dimension)+'px');
+    $('.row').css('width', ((dimension*size)) + 'px');
     $('.box').css('width', dimension + 'px');
+    $('.box').css('height', dimension + 'px');
     setListeners();
   };
 
