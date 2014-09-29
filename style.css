@@ -1,0 +1,29 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body { 
+    margin:0 auto;
+    padding:0;
+}
+
+#container {
+    width:600px;
+    height:600px;
+}
+
+.row {
+    width:100%;
+}
+
+.box {
+    float: left;
+    height: 100%;
+    border: 1px solid lightgrey;
+}
+
+.color {
+    background-color: black;
+}
